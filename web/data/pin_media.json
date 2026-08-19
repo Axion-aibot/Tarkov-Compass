@@ -1,0 +1,623 @@
+{
+  "version": "24.4",
+  "generated": "2026-08-19",
+  "runtime": "local bundled WebP + exact RE3MR map-crop fallback",
+  "credits": [
+    {
+      "name": "Official Escape from Tarkov Wiki",
+      "url": "https://escapefromtarkov.fandom.com/wiki/Quests",
+      "use": "quest/image-guide and extraction reference cross-check"
+    },
+    {
+      "name": "Wand / Team Wand - Streets Extraction Points",
+      "url": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point",
+      "use": "17 bundled Streets recognition screenshots"
+    },
+    {
+      "name": "Wand / Team Wand - Streets Quest Items",
+      "url": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items",
+      "use": "20 bundled Streets quest-location recognition screenshots"
+    },
+    {
+      "name": "Wand / Team Wand - Ground Zero Quest Items",
+      "url": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items",
+      "use": "12 bundled Ground Zero quest-location recognition screenshots"
+    }
+  ],
+  "exact": {
+    "streetsoftarkov|extract|cardinal apartment complex parking": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/cardinal_apartment_complex_parking.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|collapsed crane": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/collapsed_crane.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|courtyard": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/courtyard.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|crash site": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/crash_site.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|damaged house": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/damaged_house.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|entrance to catacombs": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/entrance_to_catacombs.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|expo checkpoint": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/expo_checkpoint.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|klimov shopping mall exfil": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/klimov_shopping_mall_exfil.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|klimov street": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/klimov_street.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|near kamchatskaya arch": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/near_kamchatskaya_arch.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|pinewood basement": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/pinewood_basement.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|primorsky ave taxi v ex": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/primorsky_ave_taxi_v_ex.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|sewer manhole": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/sewer_manhole.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|sewer river": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/sewer_river.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|smugglers basement": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/smugglers_basement.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|stylobate building elevator": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/stylobate_building_elevator.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    },
+    "streetsoftarkov|extract|ventilation shaft": {
+      "images": [
+        {
+          "src": "/assets/thumbs/extracts/streets/ventilation_shaft.webp",
+          "label": "Herkenningsbeeld",
+          "source": "Wand / Team Wand",
+          "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/place-of-interests/extraction-point"
+        }
+      ],
+      "aliases": [],
+      "confidence": "visual-anchor"
+    }
+  },
+  "questKeywords": [
+    {
+      "map": "groundzero",
+      "keywords": [
+        "ags grenade launcher",
+        "ags launcher",
+        "automatic grenade launcher"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/ags_grenade_launcher.webp",
+      "label": "AGS grenade launcher",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "claymore",
+        "mine"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/claymore_mine.webp",
+      "label": "Claymore / mine",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "dead scientist",
+        "scientist body"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/dead_scientist.webp",
+      "label": "Dead scientist",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "emercom station",
+        "emercom"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/emercom_station.webp",
+      "label": "Emercom station",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "scientist's hard drive",
+        "scientist hard drive",
+        "hard drive"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/scientists_hard_drive.webp",
+      "label": "Scientist's hard drive",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "sightseeing"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/sightseeing.webp",
+      "label": "Sightseeing",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "computer joke",
+        "computer"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/computer_joke.webp",
+      "label": "Computer location",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "high-rise die hard",
+        "high rise die hard"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/high_rise_die_hard.webp",
+      "label": "High-rise objective",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "usec group",
+        "usec bodies"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/usec_group.webp",
+      "label": "USEC group",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "utyos machine gun",
+        "utyos",
+        "machine gun"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/utyos_machine_gun.webp",
+      "label": "Utyos machine gun",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "vehicle extraction",
+        "vehicle extract",
+        "car extract"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/vehicle_extraction.webp",
+      "label": "Vehicle extraction",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "groundzero",
+      "keywords": [
+        "wine bottle",
+        "wine"
+      ],
+      "image": "/assets/thumbs/quests/groundzero/wine_bottle.webp",
+      "label": "Wine bottle",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/ground-zero/checklist/quest-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "ambush point"
+      ],
+      "image": "/assets/thumbs/quests/streets/ambush_point.webp",
+      "label": "Ambush point",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "amphibian pizza",
+        "pizza lovers",
+        "pizza hideout"
+      ],
+      "image": "/assets/thumbs/quests/streets/amphibian_pizza_hideout.webp",
+      "label": "Amphibian Pizza Lovers' hideout",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "bloody broadcast",
+        "broadcast pt. 3",
+        "broadcast part 3"
+      ],
+      "image": "/assets/thumbs/quests/streets/bloody_broadcast_pt3.webp",
+      "label": "Bloody Broadcast location",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "burned girl",
+        "sickroom"
+      ],
+      "image": "/assets/thumbs/quests/streets/burned_girls_sickroom.webp",
+      "label": "Burned girl's sickroom",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "cargo area"
+      ],
+      "image": "/assets/thumbs/quests/streets/cargo_area.webp",
+      "label": "Cargo area",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "cargo convoy",
+        "convoy"
+      ],
+      "image": "/assets/thumbs/quests/streets/cargo_convoy.webp",
+      "label": "Cargo convoy",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "chemical laboratory",
+        "chemical lab"
+      ],
+      "image": "/assets/thumbs/quests/streets/chemical_laboratory.webp",
+      "label": "Chemical laboratory",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "green flare",
+        "flare zone"
+      ],
+      "image": "/assets/thumbs/quests/streets/green_flare.webp",
+      "label": "Green flare area",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "hotel courtyard"
+      ],
+      "image": "/assets/thumbs/quests/streets/hotel_courtyard.webp",
+      "label": "Hotel courtyard",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "housing office journal",
+        "office journal"
+      ],
+      "image": "/assets/thumbs/quests/streets/housing_office_journal.webp",
+      "label": "Housing office journal",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "real estate agency",
+        "realty office"
+      ],
+      "image": "/assets/thumbs/quests/streets/real_estate_agency.webp",
+      "label": "Real estate agency",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "registered letter"
+      ],
+      "image": "/assets/thumbs/quests/streets/registered_letter.webp",
+      "label": "Registered letter",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "shestyorochka",
+        "six store"
+      ],
+      "image": "/assets/thumbs/quests/streets/shestyorochka_store.webp",
+      "label": "Shestyorochka store",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "sightseeing location",
+        "sightseeing"
+      ],
+      "image": "/assets/thumbs/quests/streets/sightseeing_location.webp",
+      "label": "Sightseeing location",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "tarkov city souvenir key",
+        "souvenir key"
+      ],
+      "image": "/assets/thumbs/quests/streets/tarkov_city_souvenir_key.webp",
+      "label": "Tarkov City souvenir key",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "barbed wire body",
+        "barbed wire"
+      ],
+      "image": "/assets/thumbs/quests/streets/barbed_wire_body.webp",
+      "label": "Barbed-wire body",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "big game"
+      ],
+      "image": "/assets/thumbs/quests/streets/huntsman_big_game.webp",
+      "label": "The Huntsman Path - Big Game",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "crooked cop"
+      ],
+      "image": "/assets/thumbs/quests/streets/huntsman_crooked_cop.webp",
+      "label": "The Huntsman Path - Crooked Cop",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "scary hole",
+        "hole in the wall"
+      ],
+      "image": "/assets/thumbs/quests/streets/scary_hole_wall.webp",
+      "label": "Hole in the wall",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    },
+    {
+      "map": "streetsoftarkov",
+      "keywords": [
+        "vet clinic",
+        "veterinary clinic"
+      ],
+      "image": "/assets/thumbs/quests/streets/vet_clinic.webp",
+      "label": "Vet clinic",
+      "source": "Wand / Team Wand",
+      "sourceUrl": "https://wand.com/maps/escape-from-tarkov/streets-of-tarkov/checklist/quests-and-activities/quest-items"
+    }
+  ],
+  "aliases": {
+    "streetsoftarkov|extract|ventilation shaft": [
+      "vent shaft",
+      "vent",
+      "ventilation"
+    ],
+    "streetsoftarkov|extract|klimov street": [
+      "klimov street flare",
+      "klimov flare",
+      "green flare extract"
+    ],
+    "streetsoftarkov|extract|smugglers basement": [
+      "smuggler basement",
+      "smugglers basement",
+      "smuggler’s basement"
+    ],
+    "streetsoftarkov|extract|primorsky ave taxi v ex": [
+      "primorsky taxi",
+      "taxi v ex",
+      "vehicle extract primorsky"
+    ],
+    "streetsoftarkov|extract|stylobate building elevator": [
+      "stylobate elevator",
+      "stylobate 3rd floor elevator"
+    ],
+    "streetsoftarkov|extract|entrance to catacombs": [
+      "catacombs",
+      "catacomb entrance"
+    ],
+    "streetsoftarkov|extract|sewer manhole": [
+      "manhole",
+      "sewer hole"
+    ],
+    "streetsoftarkov|extract|sewer river": [
+      "river extract"
+    ]
+  }
+}

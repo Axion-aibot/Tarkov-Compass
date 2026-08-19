@@ -1,0 +1,96 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tarkov Compass v24.6</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header class="topbar">
+  <div class="brand"><b>TARKOV COMPASS</b><span>v24.6 · RE3MR MAPS · account progression planner + extract image popup · offline/practice</span></div>
+  <div class="globalSearchWrap"><input id="globalSearch" autocomplete="off" placeholder="Zoek Dorms, extract, questdoel, waypoint..."><div id="searchResults" class="searchResults hidden"></div></div>
+  <div class="healthStrip"><span id="healthBadge" class="health warn">CHECK</span><span id="healthCapture" class="healthMini">CAPTURE</span><span id="healthXYZ" class="healthMini">XYZ</span><span id="healthQuest" class="healthMini">QUESTS</span></div>
+  <div class="topActions"><button id="findMeBtn">⌖ Vind mij</button><button id="navigatorBtn">Navigator</button><button id="fullscreenBtn">Volledig scherm</button><button id="fitMapBtn">Hele kaart</button><button id="diagnosticsBtn">Diagnostiek</button></div>
+  <div id="badge" class="statusPill">Starten…</div>
+</header>
+<main>
+<aside class="sidebar panel left"><button id="collapseLeftBtn" class="sideCollapse sideCollapseLeft" title="Linkerpaneel inklappen">‹</button>
+  <section class="box primarySetup"><div class="setup"><b>Game setup</b><span>Settings → Controls → Screenshot = <strong id="keyName">F9</strong></span></div>
+    <label>Map<select id="map"></select></label>
+    <label class="check"><input id="autoMap" type="checkbox" checked><span>Automatische mapdetectie</span></label>
+    <div class="two"><label>Kaart<select id="mapStyle"><option value="reemr" selected>RE3MR · volledig</option><option value="tactical">Tactisch (legacy)</option></select></label><label>Verdieping<select id="floorSelect"></select></label></div>
+    <label class="check"><input id="floorAuto" type="checkbox" checked><span>Verdieping automatisch via Y</span></label>
+    <div class="coords"><div><small>X</small><b id="x">–</b></div><div><small>Y</small><b id="y">–</b></div><div><small>Z</small><b id="z">–</b></div></div>
+  </section>
+
+  <section class="box"><h3>Live tracking</h3>
+    <label class="captureToggle"><input id="captureEnabled" type="checkbox" checked><span><b>Automatische capture</b><small>Aan = nieuwe echte XYZ-metingen</small></span></label>
+    <label>Screenshot-interval<div class="interval"><input id="intervalRange" type="range" min="0.5" max="30" step="0.5" value="0.5"><input id="intervalNumber" type="number" min="0.5" max="30" step="0.5" value="0.5"><span>s</span></div><div id="intervalLive" class="intervalState">Actief: 0,5 s</div></label>
+    <button id="intervalApplyBtn" class="applyBtn">Interval toepassen</button><div class="presets"><button data-interval="0.5">0,5</button><button data-interval="1">1</button><button data-interval="2">2</button><button data-interval="5">5</button></div>
+    <label class="check"><input id="predictive" type="checkbox" checked><span>Predictive tracking (max. 0,35 s)</span></label>
+    <label>Smoothing <span id="smoothVal">20%</span><input id="smoothing" type="range" min="0" max="70" step="5" value="20"></label>
+  </section>
+
+  <section class="box"><h3>Navigatie</h3><label>Doel<select id="targetSelect"><option value="">Geen doel</option></select></label>
+    <div class="twoButtons"><button id="clearTarget">Doel wissen</button><button id="backtrackBtn">Terug naar start</button></div>
+    <label class="check"><input id="useRoute" type="checkbox" checked><span>A*-route over walkable map</span></label><div id="routeStatus" class="statusLine">Geen route</div>
+    <div class="twoButtons"><button id="addWaypointBtn">Waypoint plaatsen</button><button id="clearWaypointsBtn">Waypoints wissen</button></div>
+  </section>
+
+  <details class="box"><summary>Weergave & tracking tuning</summary>
+    <label class="check"><input id="autoZoom" type="checkbox" checked><span>Auto-zoom</span></label><label>Follow zoom <span id="zoomVal">2.0×</span><input id="followZoom" type="range" min="1" max="4" step="0.1" value="2"></label>
+    <label>POI/quest marker <span id="markerVal">36 px</span><input id="markerSize" type="range" min="20" max="56" step="2" value="36"></label><label>Spelerpijl <span id="playerMarkerVal">72 px</span><input id="playerMarkerSize" type="range" min="44" max="112" step="4" value="72"></label><label>Kaart donkerder <span id="dimVal">12%</span><input id="mapDim" type="range" min="0" max="60" step="2" value="12"></label>
+    <label>Kijkrichting offset <span id="headingOffsetVal">0°</span><input id="headingOffset" type="range" min="-180" max="180" step="1" value="0"></label><label class="check"><input id="showTrail" type="checkbox" checked><span>Breadcrumb trail</span></label><label class="check"><input id="snapWalkable" type="checkbox"><span>Speler visueel naar walkable gebied snappen (kan afwijken)</span></label><label class="check"><input id="showHeatmap" type="checkbox"><span>Eigen heatmap</span></label>
+    <div class="threeButtons"><button id="followBtn">Slim volgen: UIT</button><button id="miniBtn">Mini</button><button id="resetBtn">Reset</button></div>
+  </details>
+
+  <details class="box"><summary>Raid-profielen</summary><label>Profiel<select id="profileSelect"><option value="">—</option></select></label><div class="threeButtons"><button id="saveProfileBtn">Opslaan</button><button id="applyProfileBtn">Laden</button><button id="deleteProfileBtn">Verwijder</button></div></details>
+  <details class="box"><summary>Kaarteditor</summary><div class="editorGrid"><button data-editor="none" class="active">Normaal</button><button data-editor="waypoint">Waypoint</button><button data-editor="poi">Eigen POI</button><button data-editor="block">Route blokkeren</button><button data-editor="erase">Wissen</button><button id="clearBlocksBtn">Alle blokkades</button></div></details>
+  <details class="box"><summary>Exacte kaartkalibratie</summary><p class="small">Gebruik 4–6 herkenbare punten verspreid over de map. De tracker koppelt de ruwe in-game XYZ aan de plek die jij aanklikt; zo corrigeert hij schaal, rotatie en offset van de kaart.</p><div class="threeButtons"><button id="calibrateBtn">Kalibratiemodus</button><button id="undoCalBtn">Laatste wissen</button><button id="clearCalBtn">Alles wissen</button></div><div id="calStatus" class="statusLine">0 punten</div><div id="calList"></div></details>
+  <details class="box debug"><summary>Techniek</summary><div id="folder">Map: –</div><div id="lastFile">Laatste: –</div><div id="dataStatus">POI: –</div><div id="recordingStatus">Opname: –</div><div class="twoButtons"><button id="folderBtn">Map detecteren</button><button id="refreshDataBtn">POI-data verversen</button></div></details>
+</aside>
+
+<section class="center"><button id="openLeftBtn" class="edgeOpen edgeOpenLeft hidden">☰</button><button id="openRightBtn" class="edgeOpen edgeOpenRight hidden">☰</button>
+  <section id="viewport" class="mapViewport panel">
+    <div id="mapLayer" class="mapLayer"><img id="mapBg" alt="Tarkov map"><div id="dimLayer"></div><canvas id="overlay"></canvas></div><div id="domPins" class="domPins" aria-label="Interactieve kaartpins"></div>
+    <canvas id="miniMap"></canvas>
+    <div class="hud"><b id="hudTitle">Wachten op speler…</b><span id="hudSub">XYZ wordt gevolgd zodra Tarkov een geldige screenshot schrijft.</span><span id="hudTarget"></span></div>
+    <div id="questMissionHud" class="questMissionHud hidden"></div><div id="questPopup" class="questPopup hidden"></div><div id="poiTooltip" class="poiTooltip hidden"></div><div id="poiDetail" class="poiDetail hidden"><button id="poiDetailClose">×</button><div id="poiDetailBody"></div></div>
+    <div id="objectiveDrawer" class="objectiveDrawer hidden"><button id="objectiveDrawerClose">×</button><div id="objectiveDrawerContent"></div></div>
+    <div class="fullMapBadge">RE3MR · VOLLEDIGE KAART · INTERACTIEVE PINS</div><div id="pinLegend" class="pinLegend"><span><i class="pin visit"></i>Bezoek</span><span><i class="pin item"></i>Item</span><span><i class="pin mark"></i>Plaats/markeer</span><span><i class="pin kill"></i>Kill</span><span><i class="pin extract"></i>Extract</span><span><i class="pin key"></i>Key</span></div>
+    <div id="floorBadge" class="floorBadge">–</div><div id="predictionBadge" class="predictionBadge">RAW</div><div id="loading" class="loading">Lokale kaart laden…</div><div class="mapHelp">Hover pin = info · klik = details · wiel = zoom · slepen = pan</div>
+  </section>
+  <section class="navBar panel"><div><small>Doel</small><b id="navName">Geen</b></div><div><small>Rechtstreeks</small><b id="navDist">–</b></div><div><small>Route</small><b id="routeDist">–</b></div><div><small>Richting</small><b id="navDir">–</b></div><div><small>ETA</small><b id="navEta">–</b></div><div><small>Snelheid</small><b id="speed">–</b></div><div><small>Verdieping</small><b id="floorReadout">–</b></div><div><small>Update</small><b id="updateAge">–</b></div></section>
+</section>
+
+<aside class="sidebar panel right"><button id="collapseRightBtn" class="sideCollapse sideCollapseRight" title="Rechterpaneel inklappen">›</button>
+  <section class="box questBox productQuest"><div class="sectionHead"><h3>Quest Navigator</h3><button id="questFocusModeBtn" class="smallBtn">Focus</button></div><div id="questDataStatus" class="statusLine">Questdata laden...</div>
+    <input id="questSearch" class="textInput" placeholder="Zoek quest, trader, key of objective..."><div class="two"><label>Trader<select id="questTrader"><option value="">Alle traders</option></select></label><label>Map<select id="questMapFilter"><option value="">Alle maps</option><option value="__current">Huidige map</option></select></label></div>
+    <label class="check"><input id="questWithLocation" type="checkbox"><span>Alleen quests met exacte kaartpins</span></label><label>Quest<select id="questSelect"><option value="">Kies een quest...</option></select></label><div id="questMapTabs" class="questMapTabs"></div>
+    <div class="threeButtons"><button id="refreshQuestsBtn">Data update</button><button id="addQuestPlanBtn">+ Raid plan</button><button id="clearQuestBtn">Sluiten</button></div>
+    <label class="check"><input id="questFocus" type="checkbox" checked><span>Andere POI's dimmen</span></label><label class="check"><input id="questPins" type="checkbox" checked><span>Interactieve questpins tonen</span></label>
+    <div id="questPrepSummary" class="questPrepSummary"></div><div id="questCard" class="questCard"><div class="emptyState">Kies een quest. Exact bekende objectives verschijnen als duidelijke, klikbare pins op de kaart.</div></div>
+  </section>
+
+  <section class="box progressionPlanner"><div class="sectionHead"><h3>Account Progressie</h3><span id="progressionStateBadge" class="tag">PLANNER</span></div>
+    <p class="small">Plan vanaf je eigen queststatus. De planner koppelt prerequisites, level, raid-kit en toekomstige unlocks aan de beste volgende map.</p>
+    <div class="two"><label>PMC level<input id="progressionLevel" type="number" min="1" max="79" step="1" value="1"></label><label>Faction<select id="progressionFaction"><option value="">Alle / onbekend</option><option value="USEC">USEC</option><option value="BEAR">BEAR</option></select></label></div>
+    <div id="progressionStats" class="progressionStats"></div>
+    <div id="bestRaidRecommendation" class="bestRaidRecommendation"><div class="statusLine">Questcatalogus laden...</div></div>
+    <div class="twoButtons"><button id="progressionLoadRaidBtn" disabled>Beste raid laden</button><button id="progressionCurrentMapBtn">Beste op huidige map</button></div>
+    <div class="progressionToolbar"><select id="progressionFilter"><option value="ready">Nu beschikbaar</option><option value="near">Bijna unlocked</option><option value="blocked">Geblokkeerd</option><option value="completed">Voltooid</option><option value="all">Alles</option></select><input id="progressionSearch" class="textInput" placeholder="Zoek quest / trader..."></div>
+    <div id="progressionQuestList" class="progressionQuestList"></div>
+    <div class="twoButtons"><button id="progressionMarkActiveBtn">Actieve quest voltooid</button><button id="progressionResetBtn">Accountstatus reset</button></div>
+  </section>
+
+  <section class="box raidPlanner"><div class="sectionHead"><h3>Raid Plan</h3><span id="raidPlanCount" class="tag">0</span></div><p class="small">Combineer quests. Smart Route gebruikt je huidige positie, open objectives en een lokale route-optimalisatie.</p><label class="check"><input id="planEndExtract" type="checkbox" checked><span>Eindig bij aanbevolen extract</span></label><div id="raidPlanList"></div><div class="twoButtons"><button id="optimizePlanBtn">Smart Route</button><button id="clearPlanBtn">Plan wissen</button></div><div id="raidPlanRoute" class="planRoute"></div></section>
+
+  <section class="box"><div class="sectionHead"><h3>Interactieve pins</h3><span id="pinCountBadge" class="tag">0</span></div><div class="pinQuick"><button id="pinsHideAll">Hide all</button><button id="pinsExtractOnly">Extracts</button><button id="pinsQuestOnly">Quests</button><button id="pinsDefault">Default</button></div><label>Pin dichtheid<select id="pinDensity"><option value="auto">Automatisch clusteren</option><option value="all">Alle pins</option><option value="minimal">Alleen open doelen</option></select></label><label>Labels<select id="pinLabels"><option value="selected" selected>Geselecteerd + hover</option><option value="smart">Slim bij inzoomen</option><option value="off">Uit</option></select></label><label class="check"><input id="showPlanPins" type="checkbox"><span>Alle pins uit Raid Plan tonen</span></label></section>
+  <details class="box" open><summary>Pin-categorieën / POI-lagen</summary><div id="poiFilters" class="filterGrid"></div></details>
+  <section class="box"><div class="sectionHead"><h3>Dichtbij</h3><span class="tag">SMART</span></div><div id="smartNext"></div><div id="nearby"></div></section>
+  <details class="box"><summary>Raid history & replay</summary><label>Opname<select id="recordingSelect"><option value="">Geen</option></select></label><div id="raidHistorySummary" class="statusLine"></div><div class="two"><label>Snelheid<select id="replaySpeed"><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label><label>Voortgang<input id="replayProgress" type="range" min="0" max="100" value="0"></label></div><div class="twoButtons"><button id="replayBtn">Replay starten</button><button id="refreshRecordingsBtn">Ververs</button></div></details>
+  <details class="box"><summary>Eigen data</summary><div id="userDataSummary" class="statusLine">0 waypoints · 0 POI's</div><div class="twoButtons"><button id="refreshHeatmapBtn">Heatmap opnieuw laden</button><button id="clearPinCorrectionsBtn">Pin-correcties wissen</button></div><div id="pinReportStatus" class="statusLine">Pinfeedback wordt lokaal opgeslagen.</div></details>
+  <section class="box diagnostics"><h3>Snelle diagnostiek</h3><div id="diagList"></div><small id="mapDetectStatus"></small></section>
+</aside>
+</main>
+
+<div id="diagnosticsModal" class="modal hidden"><div class="modalCard"><div class="sectionHead"><h2>Diagnostiek</h2><button id="diagnosticsClose">×</button></div><pre id="diagnosticsText"></pre><div class="twoButtons"><button id="diagnosticsCopy">Kopieer diagnose</button><button id="updateAllBtn">Quest + POI data bijwerken</button></div></div></div>
+<div id="mediaLightbox" class="modal hidden"><div class="modalCard mediaModalCard"><div class="sectionHead"><h2 id="mediaLightboxTitle">Locatievoorbeeld</h2><button id="mediaLightboxClose">×</button></div><div id="mediaLightboxBody" class="mediaLightboxBody"></div><div id="mediaLightboxCaption" class="statusLine"></div></div></div>
+<div id="extractPreviewModal" class="modal hidden"><div class="modalCard extractPreviewCard"><div class="sectionHead"><div><h2 id="extractPreviewTitle">Extract voorbeeld</h2><div id="extractPreviewSub" class="statusLine">Vergelijk dit beeld met je omgeving.</div></div><button id="extractPreviewClose">×</button></div><div id="extractPreviewBody" class="extractPreviewBody"></div><div id="extractPreviewMeta" class="statusLine"></div><div class="extractPreviewActions"><button id="extractPreviewNavigate" class="primaryPinAction">▶ Navigeer</button><button id="extractPreviewFocus">Focus op kaart</button><button id="extractPreviewInfo">Meer info</button></div></div></div>
+<div id="pinReportModal" class="modal hidden"><div class="modalCard pinReportCard"><div class="sectionHead"><h2>Pin klopt niet?</h2><button id="pinReportClose">×</button></div><div id="pinReportName" class="reportPinName"></div><p class="small">Je feedback blijft lokaal in <code>pin_reports.json</code>. Kies “Nieuwe plek kiezen” om de pin direct voor deze installatie te corrigeren.</p><label>Opmerking<textarea id="pinReportNote" rows="4" placeholder="Bijv. pin moet aan de andere kant van de deur / ingang liggen..."></textarea></label><div class="threeButtons"><button id="pinReportSend">Alleen melden</button><button id="pinReportPick">Nieuwe plek kiezen</button><button id="pinReportCancel">Annuleren</button></div></div></div>
+<div id="pinCorrectionBanner" class="pinCorrectionBanner hidden"><b>PIN-CORRECTIE</b><span>Klik exact op de juiste plek op de kaart · Esc = annuleren</span></div>
+<script src="/app.js"></script><script src="/v244.js"></script><script src="/v246.js"></script></body></html>

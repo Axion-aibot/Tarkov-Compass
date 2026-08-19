@@ -1,0 +1,14 @@
+{
+  "screenshot_folder": "auto",
+  "screenshot_key": "F9",
+  "interval_seconds": 0.5,
+  "delete_auto_screenshots": true,
+  "default_map": "streetsoftarkov",
+  "open_browser": true,
+  "host": "127.0.0.1",
+  "port": 8765,
+  "auto_map_detect": false,
+  "capture_enabled": true,
+  "app_version": "24.6-progression-planner",
+  "app_name": "Tarkov Compass"
+}

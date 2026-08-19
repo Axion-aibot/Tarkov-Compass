@@ -1,0 +1,80 @@
+{
+  "version": "24.3",
+  "description": "Visual tip anchors measured against the bundled RE3MR Streets source image. Used only for RE3MR display alignment; live world coordinates remain preferred for game-distance data.",
+  "maps": {
+    "streetsoftarkov": {
+      "reemr": {
+        "extract": {
+          "expo checkpoint": {
+            "nx": 0.543457,
+            "ny": 0.22172
+          },
+          "cardinal apartment complex parking": {
+            "nx": 0.655793,
+            "ny": 0.189495
+          },
+          "near kamchatskaya arch": {
+            "nx": 0.475031,
+            "ny": 0.38132
+          },
+          "stylobate building elevator": {
+            "nx": 0.763704,
+            "ny": 0.324452
+          },
+          "klimov shopping mall exfil": {
+            "nx": 0.868182,
+            "ny": 0.427185
+          },
+          "pinewood basement": {
+            "nx": 0.819866,
+            "ny": 0.487805
+          },
+          "klimov street": {
+            "nx": 0.908701,
+            "ny": 0.472416
+          },
+          "smugglers basement": {
+            "nx": 0.627462,
+            "ny": 0.402743
+          },
+          "collapsed crane": {
+            "nx": 0.480849,
+            "ny": 0.652266
+          },
+          "sewer manhole": {
+            "nx": 0.421194,
+            "ny": 0.729102
+          },
+          "sewer river": {
+            "nx": 0.913139,
+            "ny": 0.675699
+          },
+          "entrance to catacombs": {
+            "nx": 0.906308,
+            "ny": 0.687214
+          },
+          "damaged house": {
+            "nx": 0.877532,
+            "ny": 0.824606
+          },
+          "ventilation shaft": {
+            "nx": 0.758381,
+            "ny": 0.896132
+          },
+          "primorsky ave taxi v ex": {
+            "nx": 0.632819,
+            "ny": 0.913177
+          },
+          "courtyard": {
+            "nx": 0.773531,
+            "ny": 0.974428
+          },
+          "crash site": {
+            "nx": 0.375705,
+            "ny": 0.78905
+          }
+        }
+      }
+    }
+  }
+}

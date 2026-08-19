@@ -1,0 +1,65 @@
+TARKOV COMPASS PRODUCT v24.6
+===================================
+
+CORE / STABILITEIT
+- Single-instance bescherming
+- START_TRACKER.bat ruimt oudere trackerprocessen gericht op
+- Dynamische lokale poort 8765-8784
+- Health status: capture / XYZ / quests
+- Diagnostiekpagina + kopieerbare diagnose
+- Exact screenshot-interval 0.5-30 sec
+- Capture aan/uit
+- Smoothing + korte prediction
+- Outlier rejection
+- Auto map detect + handmatige fallback
+- Y-gebaseerde floor select + override
+
+INTERACTIEVE QUESTKAART
+- Quest zoeken op naam/trader/doel/item/map
+- Genummerde, type-gecodeerde pins
+- Confidence per objective
+- Automatische clustering op drukke maps
+- Labels standaard alleen selected/hover
+- Objective drawer: wat doen / benodigdheden / map / floor / confidence
+- Navigate en Done direct vanuit drawer
+- Quest Mission HUD
+- Volgende open questlocatie
+- Questprogress lokaal opslaan
+- Raid-kit checklist lokaal opslaan
+- Geen fake pin zonder betrouwbare positie
+
+RAID PLANNER
+- Maximaal 8 quests
+- Open questdoelen op huidige map
+- Nearest-neighbour volgorde vanaf live positie
+- Raid Plan-pins optioneel (standaard uit voor rust)
+- Volgende planstap direct navigeerbaar
+
+NAVIGATIE
+- Quest / extract / waypoint / breadcrumb start
+- A* route over lokaal walkable mask
+- Eigen routeblokkades
+- Afstand / richting / ETA
+- Slimme follow-camera en autozoom
+- Minimap / Navigator / fullscreen
+- Breadcrumb backtrack
+
+KAART / SEARCH
+- Realistische kleurkaart + tactische kaart
+- Lokale mapassets
+- POI filters
+- Quest focus
+- Globale search over quests, POIs, extracts, waypoints en andere maps zodra cache beschikbaar is
+- 3+ punt affine kalibratie
+- Map editor / blokkades
+- Heatmap
+
+RAID HISTORY
+- Recording/replay
+- Trail, afstand, duur
+- Persoonlijke heatmap
+
+DATA
+- Quest- en POI-cache lokaal na succesvolle sync
+- Update Data knop
+- First-run sync gebeurt op achtergrond en blokkeert serverstart niet

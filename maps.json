@@ -1,0 +1,2171 @@
+{
+  "customs": {
+    "name": "Customs",
+    "corners": [
+      [
+        698,
+        -307
+      ],
+      [
+        -372,
+        237
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/customs.jpg",
+    "playArea": {
+      "x": 0.035,
+      "y": 0.145,
+      "w": 0.93,
+      "h": 0.61
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "styles": {
+      "reemr": "/maps/reemr/customs.jpg",
+      "tactical": "/maps/tactical/customs.png"
+    },
+    "mask": "/masks/customs.png",
+    "floors": [
+      "Ground_Level"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -9999,
+        9999,
+        "Ground_Level"
+      ]
+    ],
+    "playAreas": {
+      "reemr": {
+        "x": 0.035,
+        "y": 0.145,
+        "w": 0.93,
+        "h": 0.61
+      }
+    },
+    "starterPins": [
+      {
+        "id": "c_bigred",
+        "name": "Big Red",
+        "category": "landmark",
+        "nx": 0.11,
+        "ny": 0.43,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "c_dorms",
+        "name": "Dorms",
+        "category": "landmark",
+        "nx": 0.66,
+        "ny": 0.34,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "c_crack",
+        "name": "Crackhouse",
+        "category": "landmark",
+        "nx": 0.39,
+        "ny": 0.56,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "c_fort",
+        "name": "Fortress",
+        "category": "landmark",
+        "nx": 0.56,
+        "ny": 0.57,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "c_newgas",
+        "name": "New Gas",
+        "category": "landmark",
+        "nx": 0.74,
+        "ny": 0.47,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "c_oldgas",
+        "name": "Old Gas",
+        "category": "landmark",
+        "nx": 0.62,
+        "ny": 0.67,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "c_mil",
+        "name": "Military Checkpoint",
+        "category": "landmark",
+        "nx": 0.91,
+        "ny": 0.45,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [
+      {
+        "id": "dorms",
+        "name": "Dorms detail",
+        "image": "/maps/reemr/customs-dorms.jpg"
+      }
+    ],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "main"
+  },
+  "factory": {
+    "name": "Factory",
+    "corners": [
+      [
+        77,
+        -64.5
+      ],
+      [
+        -65.5,
+        67.4
+      ]
+    ],
+    "coordinateRotation": 90,
+    "image": "/maps/reemr/factory.jpg",
+    "playArea": {
+      "x": 0.57,
+      "y": 0.14,
+      "w": 0.22,
+      "h": 0.42
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "styles": {
+      "reemr": "/maps/reemr/factory.jpg",
+      "tactical": "/maps/tactical/factory.png"
+    },
+    "mask": "/masks/factory.png",
+    "floors": [
+      "Tunnels",
+      "Ground_Floor",
+      "Second_Floor",
+      "Third_Floor"
+    ],
+    "defaultFloor": "Tunnels",
+    "floorBands": [
+      [
+        -9999,
+        -1,
+        "Tunnels"
+      ],
+      [
+        -1,
+        3,
+        "Ground_Floor"
+      ],
+      [
+        3,
+        6,
+        "Second_Floor"
+      ],
+      [
+        6,
+        9999,
+        "Third_Floor"
+      ]
+    ],
+    "playAreas": {
+      "reemr": {
+        "x": 0.57,
+        "y": 0.14,
+        "w": 0.22,
+        "h": 0.42
+      }
+    },
+    "starterPins": [
+      {
+        "id": "f_office",
+        "name": "Office area",
+        "category": "landmark",
+        "nx": 0.66,
+        "ny": 0.3,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "f_gate3",
+        "name": "Gate 3",
+        "category": "extract",
+        "nx": 0.77,
+        "ny": 0.38,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "f_med",
+        "name": "Medical tent",
+        "category": "landmark",
+        "nx": 0.6,
+        "ny": 0.47,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "f_tunnel",
+        "name": "Tunnels",
+        "category": "landmark",
+        "nx": 0.88,
+        "ny": 0.3,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "floorPlayAreas": {
+      "reemr": {
+        "Tunnels": {
+          "x": 0.8,
+          "y": 0.12,
+          "w": 0.19,
+          "h": 0.44
+        },
+        "Ground_Floor": {
+          "x": 0.57,
+          "y": 0.12,
+          "w": 0.22,
+          "h": 0.44
+        },
+        "Second_Floor": {
+          "x": 0.29,
+          "y": 0.12,
+          "w": 0.27,
+          "h": 0.44
+        },
+        "Third_Floor": {
+          "x": 0.02,
+          "y": 0.12,
+          "w": 0.26,
+          "h": 0.44
+        }
+      }
+    },
+    "group": "main"
+  },
+  "groundzero": {
+    "name": "Ground Zero",
+    "corners": [
+      [
+        249,
+        -124
+      ],
+      [
+        -99,
+        364
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/groundzero.jpg",
+    "playArea": {
+      "x": 0.42,
+      "y": 0.055,
+      "w": 0.44,
+      "h": 0.88
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "styles": {
+      "reemr": "/maps/reemr/groundzero.jpg",
+      "tactical": "/maps/tactical/groundzero.png"
+    },
+    "mask": "/masks/groundzero.png",
+    "floors": [
+      "Garage",
+      "Ground_Level",
+      "Second_Floor",
+      "Third_Floor"
+    ],
+    "defaultFloor": "Garage",
+    "floorBands": [
+      [
+        -9999,
+        21,
+        "Garage"
+      ],
+      [
+        21,
+        28,
+        "Ground_Level"
+      ],
+      [
+        28,
+        32.3,
+        "Second_Floor"
+      ],
+      [
+        32.3,
+        9999,
+        "Third_Floor"
+      ]
+    ],
+    "playAreas": {
+      "reemr": {
+        "x": 0.42,
+        "y": 0.055,
+        "w": 0.44,
+        "h": 0.88
+      }
+    },
+    "starterPins": [
+      {
+        "id": "gz_terra",
+        "name": "TerraGroup",
+        "category": "landmark",
+        "nx": 0.62,
+        "ny": 0.22,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "gz_empire",
+        "name": "Empire",
+        "category": "landmark",
+        "nx": 0.61,
+        "ny": 0.48,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "gz_nakatani",
+        "name": "Nakatani",
+        "category": "landmark",
+        "nx": 0.61,
+        "ny": 0.8,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "gz_fusion",
+        "name": "Fusion",
+        "category": "landmark",
+        "nx": 0.7,
+        "ny": 0.38,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "gz_tarbank",
+        "name": "Tarbank",
+        "category": "landmark",
+        "nx": 0.59,
+        "ny": 0.56,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "main"
+  },
+  "icebreaker": {
+    "name": "Icebreaker",
+    "corners": [
+      [
+        77,
+        -64.5
+      ],
+      [
+        -65.5,
+        67.4
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/icebreaker.jpg",
+    "styles": {
+      "reemr": "/maps/reemr/icebreaker.jpg"
+    },
+    "playArea": {
+      "x": 0.13,
+      "y": 0.17,
+      "w": 0.055,
+      "h": 0.43
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0.13,
+        "y": 0.17,
+        "w": 0.055,
+        "h": 0.43
+      }
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "floors": [
+      "Control_Room",
+      "Engine_Room",
+      "Engine_Room_Upper",
+      "Fuel_Pumps_Lower",
+      "Fuel_Pumps",
+      "Storage_Security",
+      "Infirmary",
+      "Helipad",
+      "Gym_Canteen",
+      "Accommodation_Lower",
+      "Accommodation_Mid",
+      "Accommodation_Upper",
+      "Officers_Deck",
+      "Stairs_Blocked",
+      "Bridge",
+      "Bridge_Roof"
+    ],
+    "defaultFloor": "Control_Room",
+    "floorBands": [
+      [
+        -9999,
+        3.5,
+        "Control_Room"
+      ],
+      [
+        3.5,
+        5.7,
+        "Engine_Room"
+      ],
+      [
+        5.7,
+        8.8,
+        "Engine_Room_Upper"
+      ],
+      [
+        8.8,
+        11.9,
+        "Fuel_Pumps_Lower"
+      ],
+      [
+        11.9,
+        15,
+        "Fuel_Pumps"
+      ],
+      [
+        15,
+        18.92,
+        "Storage_Security"
+      ],
+      [
+        18.92,
+        19.57,
+        "Infirmary"
+      ],
+      [
+        19.57,
+        22.2,
+        "Helipad"
+      ],
+      [
+        22.2,
+        25.3,
+        "Gym_Canteen"
+      ],
+      [
+        25.3,
+        28.3,
+        "Accommodation_Lower"
+      ],
+      [
+        28.3,
+        31.4,
+        "Accommodation_Mid"
+      ],
+      [
+        31.4,
+        34.5,
+        "Accommodation_Upper"
+      ],
+      [
+        34.5,
+        37.6,
+        "Officers_Deck"
+      ],
+      [
+        37.6,
+        40.7,
+        "Stairs_Blocked"
+      ],
+      [
+        40.7,
+        43.8,
+        "Bridge"
+      ],
+      [
+        43.8,
+        9999,
+        "Bridge_Roof"
+      ]
+    ],
+    "starterPins": [
+      {
+        "id": "ib_engine",
+        "name": "Engine room decks",
+        "category": "landmark",
+        "nx": 0.22,
+        "ny": 0.35,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "ib_inf",
+        "name": "Infirmary",
+        "category": "landmark",
+        "nx": 0.5,
+        "ny": 0.32,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "ib_bridge",
+        "name": "Bridge",
+        "category": "landmark",
+        "nx": 0.82,
+        "ny": 0.3,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "ib_legend",
+        "name": "Deck legend",
+        "category": "landmark",
+        "nx": 0.3,
+        "ny": 0.78,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "floorPlayAreas": {
+      "reemr": {
+        "Control_Room": {
+          "x": 0.12,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Engine_Room": {
+          "x": 0.18,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Engine_Room_Upper": {
+          "x": 0.24,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Fuel_Pumps_Lower": {
+          "x": 0.3,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Fuel_Pumps": {
+          "x": 0.36,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Storage_Security": {
+          "x": 0.42,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Infirmary": {
+          "x": 0.48,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Helipad": {
+          "x": 0.54,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Gym_Canteen": {
+          "x": 0.6,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Accommodation_Lower": {
+          "x": 0.66,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Accommodation_Mid": {
+          "x": 0.72,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Accommodation_Upper": {
+          "x": 0.78,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Officers_Deck": {
+          "x": 0.84,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Stairs_Blocked": {
+          "x": 0.89,
+          "y": 0.16,
+          "w": 0.055,
+          "h": 0.44
+        },
+        "Bridge": {
+          "x": 0.93,
+          "y": 0.16,
+          "w": 0.045,
+          "h": 0.44
+        },
+        "Bridge_Roof": {
+          "x": 0.96,
+          "y": 0.16,
+          "w": 0.045,
+          "h": 0.44
+        }
+      }
+    },
+    "group": "main"
+  },
+  "interchange": {
+    "name": "Interchange",
+    "corners": [
+      [
+        598,
+        -442
+      ],
+      [
+        -433,
+        426
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/interchange.jpg",
+    "playArea": {
+      "x": 0.015,
+      "y": 0.12,
+      "w": 0.5,
+      "h": 0.84
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "styles": {
+      "reemr": "/maps/reemr/interchange.jpg",
+      "tactical": "/maps/tactical/interchange.png"
+    },
+    "mask": "/masks/interchange.png",
+    "floors": [
+      "Parking",
+      "First_Floor",
+      "Second_Floor"
+    ],
+    "defaultFloor": "Parking",
+    "floorBands": [
+      [
+        -9999,
+        25,
+        "Parking"
+      ],
+      [
+        25,
+        34,
+        "First_Floor"
+      ],
+      [
+        34,
+        9999,
+        "Second_Floor"
+      ]
+    ],
+    "playAreas": {
+      "reemr": {
+        "x": 0.015,
+        "y": 0.12,
+        "w": 0.5,
+        "h": 0.84
+      }
+    },
+    "starterPins": [
+      {
+        "id": "ic_rail",
+        "name": "Railway Exfil",
+        "category": "extract",
+        "nx": 0.06,
+        "ny": 0.14,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "ic_power",
+        "name": "Power Station",
+        "category": "landmark",
+        "nx": 0.44,
+        "ny": 0.2,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "ic_mall",
+        "name": "ULTRA Mall",
+        "category": "landmark",
+        "nx": 0.31,
+        "ny": 0.47,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "ic_emercom",
+        "name": "Emercom Checkpoint",
+        "category": "extract",
+        "nx": 0.48,
+        "ny": 0.8,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "ic_scav",
+        "name": "Scav Camp",
+        "category": "extract",
+        "nx": 0.69,
+        "ny": 0.48,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "floorPlayAreas": {
+      "reemr": {
+        "Parking": {
+          "x": 0.56,
+          "y": 0.25,
+          "w": 0.15,
+          "h": 0.5
+        },
+        "First_Floor": {
+          "x": 0.73,
+          "y": 0.26,
+          "w": 0.16,
+          "h": 0.5
+        },
+        "Second_Floor": {
+          "x": 0.9,
+          "y": 0.31,
+          "w": 0.095,
+          "h": 0.37
+        }
+      }
+    },
+    "group": "main"
+  },
+  "labyrinth": {
+    "name": "The Labyrinth",
+    "corners": [
+      [
+        -52,
+        -37
+      ],
+      [
+        53,
+        76
+      ]
+    ],
+    "coordinateRotation": 270,
+    "image": "/maps/reemr/labyrinth.jpg",
+    "styles": {
+      "reemr": "/maps/reemr/labyrinth.jpg"
+    },
+    "playArea": {
+      "x": 0.27,
+      "y": 0.1,
+      "w": 0.69,
+      "h": 0.82
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0.27,
+        "y": 0.1,
+        "w": 0.69,
+        "h": 0.82
+      }
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "floors": [
+      "Ground_Level"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -9999,
+        9999,
+        "Ground_Level"
+      ]
+    ],
+    "starterPins": [
+      {
+        "id": "ly_center",
+        "name": "Central complex",
+        "category": "landmark",
+        "nx": 0.63,
+        "ny": 0.48,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "ly_entry",
+        "name": "Entrances",
+        "category": "landmark",
+        "nx": 0.55,
+        "ny": 0.8,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "ly_emp",
+        "name": "EMP / center",
+        "category": "hazard",
+        "nx": 0.63,
+        "ny": 0.47,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "main"
+  },
+  "lighthouse": {
+    "name": "Lighthouse",
+    "corners": [
+      [
+        515,
+        -998
+      ],
+      [
+        -545,
+        725
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/lighthouse.jpg",
+    "playArea": {
+      "x": 0.08,
+      "y": 0.07,
+      "w": 0.84,
+      "h": 0.7
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "styles": {
+      "reemr": "/maps/reemr/lighthouse.jpg",
+      "tactical": "/maps/tactical/lighthouse.png"
+    },
+    "mask": "/masks/lighthouse.png",
+    "floors": [
+      "Ground_Level"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -9999,
+        9999,
+        "Ground_Level"
+      ]
+    ],
+    "playAreas": {
+      "reemr": {
+        "x": 0.08,
+        "y": 0.07,
+        "w": 0.84,
+        "h": 0.7
+      }
+    },
+    "starterPins": [
+      {
+        "id": "lh_wtp",
+        "name": "Water Treatment",
+        "category": "landmark",
+        "nx": 0.48,
+        "ny": 0.35,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "lh_chalet",
+        "name": "Chalets",
+        "category": "landmark",
+        "nx": 0.58,
+        "ny": 0.54,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "lh_village",
+        "name": "Village",
+        "category": "landmark",
+        "nx": 0.69,
+        "ny": 0.58,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "lh_island",
+        "name": "Lighthouse Island",
+        "category": "landmark",
+        "nx": 0.78,
+        "ny": 0.71,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "lh_train",
+        "name": "Train Yard",
+        "category": "landmark",
+        "nx": 0.33,
+        "ny": 0.2,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "main"
+  },
+  "reserve": {
+    "name": "Reserve",
+    "corners": [
+      [
+        289,
+        -293
+      ],
+      [
+        -303,
+        244
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/reserve.jpg",
+    "playArea": {
+      "x": 0.18,
+      "y": 0.08,
+      "w": 0.55,
+      "h": 0.66
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "styles": {
+      "reemr": "/maps/reemr/reserve.jpg",
+      "tactical": "/maps/tactical/reserve.png"
+    },
+    "mask": "/masks/reserve.png",
+    "floors": [
+      "Tunnels",
+      "Ground_Level"
+    ],
+    "defaultFloor": "Tunnels",
+    "floorBands": [
+      [
+        -9999,
+        -2,
+        "Tunnels"
+      ],
+      [
+        -2,
+        9999,
+        "Ground_Level"
+      ]
+    ],
+    "playAreas": {
+      "reemr": {
+        "x": 0.18,
+        "y": 0.08,
+        "w": 0.55,
+        "h": 0.66
+      }
+    },
+    "starterPins": [
+      {
+        "id": "rv_dome",
+        "name": "Dome",
+        "category": "landmark",
+        "nx": 0.48,
+        "ny": 0.13,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "rv_train",
+        "name": "Train Station",
+        "category": "landmark",
+        "nx": 0.27,
+        "ny": 0.54,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "rv_bunker",
+        "name": "Bunker",
+        "category": "landmark",
+        "nx": 0.51,
+        "ny": 0.47,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "rv_knight",
+        "name": "Knight buildings",
+        "category": "landmark",
+        "nx": 0.54,
+        "ny": 0.36,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [
+      {
+        "id": "tunnels",
+        "name": "Reserve Tunnels",
+        "image": "/maps/reemr/reserve-tunnels.jpg"
+      }
+    ],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "main"
+  },
+  "shoreline": {
+    "name": "Shoreline",
+    "corners": [
+      [
+        504,
+        -415
+      ],
+      [
+        -1056,
+        618
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/shoreline.jpg",
+    "playArea": {
+      "x": 0.025,
+      "y": 0.09,
+      "w": 0.79,
+      "h": 0.66
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "styles": {
+      "reemr": "/maps/reemr/shoreline.jpg",
+      "tactical": "/maps/tactical/shoreline.png"
+    },
+    "mask": "/masks/shoreline.png",
+    "floors": [
+      "Ground_Level",
+      "Resort_Upper"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -9999,
+        3,
+        "Ground_Level"
+      ],
+      [
+        3,
+        9999,
+        "Resort_Upper"
+      ]
+    ],
+    "playAreas": {
+      "reemr": {
+        "x": 0.025,
+        "y": 0.09,
+        "w": 0.79,
+        "h": 0.66
+      }
+    },
+    "starterPins": [
+      {
+        "id": "sh_resort",
+        "name": "Health Resort",
+        "category": "landmark",
+        "nx": 0.48,
+        "ny": 0.22,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "sh_pier",
+        "name": "Pier",
+        "category": "landmark",
+        "nx": 0.52,
+        "ny": 0.66,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "sh_village",
+        "name": "Village",
+        "category": "landmark",
+        "nx": 0.2,
+        "ny": 0.53,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "sh_weather",
+        "name": "Weather Station",
+        "category": "landmark",
+        "nx": 0.72,
+        "ny": 0.43,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "sh_power",
+        "name": "Power Station",
+        "category": "landmark",
+        "nx": 0.54,
+        "ny": 0.45,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [
+      {
+        "id": "resort",
+        "name": "Resort detail",
+        "image": "/maps/reemr/shoreline-resort.jpg"
+      }
+    ],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "main"
+  },
+  "streetsoftarkov": {
+    "name": "Streets of Tarkov",
+    "corners": [
+      [
+        323,
+        -295
+      ],
+      [
+        -280,
+        532
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/streetsoftarkov.jpg",
+    "playArea": {
+      "x": 0.3777,
+      "y": 0.0879,
+      "w": 0.5327,
+      "h": 0.8692
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "styles": {
+      "reemr": "/maps/reemr/streetsoftarkov.jpg",
+      "tactical": "/maps/tactical/streetsoftarkov.png"
+    },
+    "mask": "/masks/streetsoftarkov.png",
+    "floors": [
+      "Underground",
+      "Ground_Level",
+      "Second_Floor",
+      "Third_Floor",
+      "Fourth_Floor",
+      "Fifth_Floor"
+    ],
+    "defaultFloor": "Underground",
+    "floorBands": [
+      [
+        -9999,
+        -6,
+        "Underground"
+      ],
+      [
+        -6,
+        10,
+        "Ground_Level"
+      ],
+      [
+        10,
+        15,
+        "Second_Floor"
+      ],
+      [
+        15,
+        20,
+        "Third_Floor"
+      ],
+      [
+        20,
+        25,
+        "Fourth_Floor"
+      ],
+      [
+        25,
+        9999,
+        "Fifth_Floor"
+      ]
+    ],
+    "playAreas": {
+      "reemr": {
+        "x": 0.3777,
+        "y": 0.0879,
+        "w": 0.5327,
+        "h": 0.8692
+      }
+    },
+    "starterPins": [
+      {
+        "id": "st_lexos",
+        "name": "Lexos",
+        "category": "landmark",
+        "nx": 0.61,
+        "ny": 0.5,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "st_pine",
+        "name": "Pinewood Hotel",
+        "category": "landmark",
+        "nx": 0.7,
+        "ny": 0.42,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "st_cardinal",
+        "name": "Cardinal Apartments",
+        "category": "landmark",
+        "nx": 0.62,
+        "ny": 0.22,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "st_cinema",
+        "name": "Cinema",
+        "category": "landmark",
+        "nx": 0.79,
+        "ny": 0.74,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "st_conc",
+        "name": "Concordia",
+        "category": "landmark",
+        "nx": 0.55,
+        "ny": 0.74,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "st_expo",
+        "name": "Expo",
+        "category": "landmark",
+        "nx": 0.5,
+        "ny": 0.27,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [
+      {
+        "id": "caches",
+        "name": "Cache map",
+        "image": "/maps/reemr/streets-caches.jpg"
+      },
+      {
+        "id": "lexos",
+        "name": "Lexos detail",
+        "image": "/maps/reemr/streets-lexos.jpg"
+      }
+    ],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "main"
+  },
+  "terminal": {
+    "name": "Terminal",
+    "corners": [
+      [
+        463,
+        -580
+      ],
+      [
+        -433,
+        475
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/terminal.jpg",
+    "styles": {
+      "reemr": "/maps/reemr/terminal.jpg"
+    },
+    "playArea": {
+      "x": 0.03,
+      "y": 0.07,
+      "w": 0.91,
+      "h": 0.78
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0.03,
+        "y": 0.07,
+        "w": 0.91,
+        "h": 0.78
+      }
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "floors": [
+      "Ground_Level"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -9999,
+        9999,
+        "Ground_Level"
+      ]
+    ],
+    "starterPins": [
+      {
+        "id": "te_main",
+        "name": "Terminal complex",
+        "category": "landmark",
+        "nx": 0.48,
+        "ny": 0.4,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "te_ware",
+        "name": "Warehouses",
+        "category": "landmark",
+        "nx": 0.24,
+        "ny": 0.38,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "te_yard",
+        "name": "Container yard",
+        "category": "landmark",
+        "nx": 0.62,
+        "ny": 0.52,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "te_docks",
+        "name": "Docks",
+        "category": "landmark",
+        "nx": 0.78,
+        "ny": 0.27,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "main"
+  },
+  "woods": {
+    "name": "Woods",
+    "corners": [
+      [
+        646,
+        -914
+      ],
+      [
+        -761,
+        442
+      ]
+    ],
+    "coordinateRotation": 180,
+    "image": "/maps/reemr/woods.jpg",
+    "playArea": {
+      "x": 0.035,
+      "y": 0.055,
+      "w": 0.93,
+      "h": 0.69
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "styles": {
+      "reemr": "/maps/reemr/woods.jpg",
+      "tactical": "/maps/tactical/woods.png"
+    },
+    "mask": "/masks/woods.png",
+    "floors": [
+      "Ground_Level"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -9999,
+        9999,
+        "Ground_Level"
+      ]
+    ],
+    "playAreas": {
+      "reemr": {
+        "x": 0.035,
+        "y": 0.055,
+        "w": 0.93,
+        "h": 0.69
+      }
+    },
+    "starterPins": [
+      {
+        "id": "wo_sawmill",
+        "name": "Sawmill",
+        "category": "landmark",
+        "nx": 0.52,
+        "ny": 0.49,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "wo_usec",
+        "name": "USEC Camp",
+        "category": "landmark",
+        "nx": 0.3,
+        "ny": 0.29,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "wo_town",
+        "name": "Scav Town",
+        "category": "landmark",
+        "nx": 0.72,
+        "ny": 0.32,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "wo_out",
+        "name": "Outskirts",
+        "category": "extract",
+        "nx": 0.12,
+        "ny": 0.69,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "wo_med",
+        "name": "Medical Camp",
+        "category": "landmark",
+        "nx": 0.75,
+        "ny": 0.6,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [],
+    "liveTracking": true,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "main"
+  },
+  "customs_dorms": {
+    "name": "Customs · Dorms (detail)",
+    "source": "RE3MR",
+    "group": "detail",
+    "parentMap": "customs",
+    "referenceOnly": true,
+    "liveTracking": false,
+    "corners": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "coordinateRotation": 0,
+    "styles": {
+      "reemr": "/maps/reemr/customs-dorms.jpg"
+    },
+    "image": "/maps/reemr/customs-dorms.jpg",
+    "playArea": {
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      }
+    },
+    "floors": [
+      "Ground_Floor",
+      "Second_Floor",
+      "Third_Floor"
+    ],
+    "defaultFloor": "Ground_Floor",
+    "floorBands": [
+      [
+        -999,
+        999,
+        "Ground_Floor"
+      ]
+    ],
+    "starterPins": [
+      {
+        "name": "3 Story Dorms",
+        "category": "landmark",
+        "nx": 0.61,
+        "ny": 0.2
+      },
+      {
+        "name": "2 Story Dorms",
+        "category": "landmark",
+        "nx": 0.61,
+        "ny": 0.7
+      },
+      {
+        "name": "Marked room area",
+        "category": "key",
+        "nx": 0.74,
+        "ny": 0.2
+      },
+      {
+        "name": "Dorms courtyard",
+        "category": "landmark",
+        "nx": 0.52,
+        "ny": 0.49
+      }
+    ],
+    "license": "RE3MR / CC BY-NC-SA"
+  },
+  "reserve_tunnels": {
+    "name": "Reserve · Tunnels (detail)",
+    "source": "RE3MR",
+    "group": "detail",
+    "parentMap": "reserve",
+    "referenceOnly": true,
+    "liveTracking": false,
+    "corners": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "coordinateRotation": 0,
+    "styles": {
+      "reemr": "/maps/reemr/reserve-tunnels.jpg"
+    },
+    "image": "/maps/reemr/reserve-tunnels.jpg",
+    "playArea": {
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      }
+    },
+    "floors": [
+      "Underground_Level"
+    ],
+    "defaultFloor": "Underground_Level",
+    "floorBands": [
+      [
+        -999,
+        999,
+        "Underground_Level"
+      ]
+    ],
+    "starterPins": [
+      {
+        "name": "D-2 route",
+        "category": "extract",
+        "nx": 0.57,
+        "ny": 0.38
+      },
+      {
+        "name": "Bunker tunnel hub",
+        "category": "landmark",
+        "nx": 0.49,
+        "ny": 0.47
+      },
+      {
+        "name": "Power / switch area",
+        "category": "switch",
+        "nx": 0.52,
+        "ny": 0.52
+      },
+      {
+        "name": "Tunnel route south",
+        "category": "transit",
+        "nx": 0.56,
+        "ny": 0.72
+      }
+    ],
+    "license": "RE3MR / CC BY-NC-SA"
+  },
+  "shoreline_resort": {
+    "name": "Shoreline · Resort (detail)",
+    "source": "RE3MR",
+    "group": "detail",
+    "parentMap": "shoreline",
+    "referenceOnly": true,
+    "liveTracking": false,
+    "corners": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "coordinateRotation": 0,
+    "styles": {
+      "reemr": "/maps/reemr/shoreline-resort.jpg"
+    },
+    "image": "/maps/reemr/shoreline-resort.jpg",
+    "playArea": {
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      }
+    },
+    "floors": [
+      "Ground_Level",
+      "First_Floor",
+      "Second_Floor",
+      "Third_Floor"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -999,
+        999,
+        "Ground_Level"
+      ]
+    ],
+    "starterPins": [
+      {
+        "name": "West Wing",
+        "category": "landmark",
+        "nx": 0.26,
+        "ny": 0.47
+      },
+      {
+        "name": "Admin Building",
+        "category": "landmark",
+        "nx": 0.5,
+        "ny": 0.5
+      },
+      {
+        "name": "East Wing",
+        "category": "landmark",
+        "nx": 0.74,
+        "ny": 0.47
+      },
+      {
+        "name": "Key rooms West",
+        "category": "key",
+        "nx": 0.28,
+        "ny": 0.58
+      },
+      {
+        "name": "Key rooms East",
+        "category": "key",
+        "nx": 0.72,
+        "ny": 0.58
+      }
+    ],
+    "license": "RE3MR / CC BY-NC-SA"
+  },
+  "streets_caches": {
+    "name": "Streets · Cache map (detail)",
+    "source": "RE3MR",
+    "group": "detail",
+    "parentMap": "streetsoftarkov",
+    "referenceOnly": true,
+    "liveTracking": false,
+    "corners": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "coordinateRotation": 0,
+    "styles": {
+      "reemr": "/maps/reemr/streets-caches.jpg"
+    },
+    "image": "/maps/reemr/streets-caches.jpg",
+    "playArea": {
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      }
+    },
+    "floors": [
+      "Ground_Level"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -999,
+        999,
+        "Ground_Level"
+      ]
+    ],
+    "starterPins": [
+      {
+        "name": "Cache cluster north",
+        "category": "loot",
+        "nx": 0.51,
+        "ny": 0.21
+      },
+      {
+        "name": "Cache cluster west",
+        "category": "loot",
+        "nx": 0.31,
+        "ny": 0.53
+      },
+      {
+        "name": "Cache cluster center",
+        "category": "loot",
+        "nx": 0.53,
+        "ny": 0.52
+      },
+      {
+        "name": "Cache cluster south",
+        "category": "loot",
+        "nx": 0.58,
+        "ny": 0.78
+      }
+    ],
+    "license": "RE3MR / CC BY-NC-SA"
+  },
+  "streets_lexos": {
+    "name": "Streets · LexOs (detail)",
+    "source": "RE3MR",
+    "group": "detail",
+    "parentMap": "streetsoftarkov",
+    "referenceOnly": true,
+    "liveTracking": false,
+    "corners": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "coordinateRotation": 0,
+    "styles": {
+      "reemr": "/maps/reemr/streets-lexos.jpg"
+    },
+    "image": "/maps/reemr/streets-lexos.jpg",
+    "playArea": {
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      }
+    },
+    "floors": [
+      "Ground_Level"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -999,
+        999,
+        "Ground_Level"
+      ]
+    ],
+    "starterPins": [
+      {
+        "name": "LexOs dealership",
+        "category": "landmark",
+        "nx": 0.49,
+        "ny": 0.46
+      },
+      {
+        "name": "Kaban area",
+        "category": "boss",
+        "nx": 0.5,
+        "ny": 0.37
+      },
+      {
+        "name": "Claymore danger",
+        "category": "hazard",
+        "nx": 0.4,
+        "ny": 0.35
+      },
+      {
+        "name": "Southern approach",
+        "category": "transit",
+        "nx": 0.51,
+        "ny": 0.77
+      }
+    ],
+    "license": "RE3MR / CC BY-NC-SA"
+  },
+  "woods_train_depot": {
+    "name": "Woods · Train Depot (detail)",
+    "source": "RE3MR",
+    "group": "detail",
+    "parentMap": "woods",
+    "referenceOnly": true,
+    "liveTracking": false,
+    "corners": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "coordinateRotation": 0,
+    "styles": {
+      "reemr": "/maps/reemr/woods-train-depot.png"
+    },
+    "image": "/maps/reemr/woods-train-depot.png",
+    "playArea": {
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      }
+    },
+    "floors": [
+      "Ground_Level"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -999,
+        999,
+        "Ground_Level"
+      ]
+    ],
+    "starterPins": [
+      {
+        "name": "BTR stop",
+        "category": "service",
+        "nx": 0.43,
+        "ny": 0.23
+      },
+      {
+        "name": "Ogryzoks office",
+        "category": "landmark",
+        "nx": 0.76,
+        "ny": 0.5
+      },
+      {
+        "name": "Hidden railway exfil",
+        "category": "extract",
+        "nx": 0.91,
+        "ny": 0.2
+      },
+      {
+        "name": "Minefield edge",
+        "category": "hazard",
+        "nx": 0.95,
+        "ny": 0.35
+      },
+      {
+        "name": "Cache",
+        "category": "loot",
+        "nx": 0.22,
+        "ny": 0.43
+      },
+      {
+        "name": "Cache",
+        "category": "loot",
+        "nx": 0.56,
+        "ny": 0.5
+      }
+    ],
+    "license": "RE3MR / CC BY-NC-SA"
+  },
+  "transit": {
+    "name": "Transit Overview",
+    "corners": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "coordinateRotation": 0,
+    "image": "/maps/reemr/transit.jpg",
+    "styles": {
+      "reemr": "/maps/reemr/transit.jpg"
+    },
+    "playArea": {
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    },
+    "playAreas": {
+      "reemr": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      }
+    },
+    "mapNote": "RE3MR kaart lokaal gebundeld. Interactieve pins worden als aparte HTML-laag getekend en zijn filterbaar/klikbaar.",
+    "floors": [
+      "Ground_Level"
+    ],
+    "defaultFloor": "Ground_Level",
+    "floorBands": [
+      [
+        -9999,
+        9999,
+        "Ground_Level"
+      ]
+    ],
+    "starterPins": [
+      {
+        "id": "tr_gz",
+        "name": "Ground Zero",
+        "category": "transit",
+        "nx": 0.66,
+        "ny": 0.13,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "tr_st",
+        "name": "Streets",
+        "category": "transit",
+        "nx": 0.72,
+        "ny": 0.29,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "tr_ic",
+        "name": "Interchange",
+        "category": "transit",
+        "nx": 0.78,
+        "ny": 0.47,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "tr_cu",
+        "name": "Customs",
+        "category": "transit",
+        "nx": 0.59,
+        "ny": 0.51,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "tr_re",
+        "name": "Reserve",
+        "category": "transit",
+        "nx": 0.48,
+        "ny": 0.43,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "tr_wo",
+        "name": "Woods",
+        "category": "transit",
+        "nx": 0.45,
+        "ny": 0.22,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "tr_lh",
+        "name": "Lighthouse",
+        "category": "transit",
+        "nx": 0.2,
+        "ny": 0.5,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "tr_sh",
+        "name": "Shoreline",
+        "category": "transit",
+        "nx": 0.19,
+        "ny": 0.7,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "tr_te",
+        "name": "Terminal",
+        "category": "transit",
+        "nx": 0.36,
+        "ny": 0.79,
+        "note": "",
+        "starter": true
+      },
+      {
+        "id": "tr_lb",
+        "name": "Labyrinth",
+        "category": "transit",
+        "nx": 0.45,
+        "ny": 0.73,
+        "note": "",
+        "starter": true
+      }
+    ],
+    "detailMaps": [],
+    "liveTracking": false,
+    "source": "RE3MR",
+    "license": "CC BY-NC-SA",
+    "group": "detail"
+  },
+  "lab": {
+    "name": "The Lab (legacy)",
+    "corners": [
+      [
+        -80,
+        -477
+      ],
+      [
+        -287,
+        -193
+      ]
+    ],
+    "coordinateRotation": 270,
+    "image": "/maps/realistic/lab.png",
+    "playArea": {
+      "x": 0.03,
+      "y": 0.34,
+      "w": 0.61,
+      "h": 0.6
+    },
+    "mapNote": "Volledige bronkaart zichtbaar; geen cropping. Multi-level kaart: hoogte (Y) bepaalt niet automatisch welk verdiepingsoverzicht zichtbaar is; X/Z blijft indicatief. V12 gebruikt een lokale kleurkaart die is bijgesneden op het speelgebied en opgeschaald/verscherpt voor duidelijkere tekst en herkenningspunten. V13 bevat een realistische en tactische lokale kaartstijl, plus een lokale snap-masker.",
+    "styles": {
+      "realistic": "/maps/realistic/lab.png",
+      "tactical": "/maps/tactical/lab.png"
+    },
+    "mask": "/masks/lab.png",
+    "floors": [
+      "Technical_Level",
+      "First_Level",
+      "Second_Level"
+    ],
+    "defaultFloor": "First_Level",
+    "floorBands": [
+      [
+        -999,
+        -4,
+        "Technical_Level"
+      ],
+      [
+        -4,
+        2.5,
+        "First_Level"
+      ],
+      [
+        2.5,
+        999,
+        "Second_Level"
+      ]
+    ],
+    "source": "Legacy local map",
+    "liveTracking": true,
+    "group": "legacy"
+  }
+}
