@@ -1,155 +1,167 @@
 # Tarkov Compass v24.6
 
-v24.6 bouwt verder op de quest-spot, live-position, extraction-pin en media/Smart Route functies uit v24.1-v24.4. Deze versie voegt een lokale **Account Progression Planner** toe: PMC-level en faction, voltooide quests, prerequisite-ketens, toekomstige unlocks, raid-kit aggregatie en een automatisch voorgestelde beste volgende raid.
+v24.6 builds on the quest spot, live position, extraction pin, and media/Smart Route features introduced in v24.1–v24.4. This version adds a local **Account Progression Planner**: PMC level and faction, completed quests, prerequisite chains, future unlocks, raid kit aggregation, and an automatically suggested best next raid.
 
-## Start
+## Getting Started
 
-1. Pak de volledige ZIP uit in een nieuwe map.
-2. Bind in Tarkov `Settings -> Controls -> Screenshot` aan `F9`.
-3. Start `START_TARKOV_COMPASS.bat` (de bestaande `START_TRACKER.bat` blijft als compatibiliteitslauncher aanwezig).
-4. Gebruik Tarkov Compass alleen voor OFFLINE / Practice raids.
+1. Extract the entire ZIP into a new folder.
+2. In Tarkov, bind `Settings -> Controls -> Screenshot` to `F9`.
+3. Launch `START_TARKOV_COMPASS.bat` (the existing `START_TRACKER.bat` remains available as a compatibility launcher).
+4. Use Tarkov Compass only for OFFLINE / Practice raids.
 
-## Wat is nieuw in v24.6
+## What’s New in v24.6
 
 ### Account Progression Planner
 
-Onder **Account Progressie** kun je je PMC-level en faction (USEC/BEAR) instellen. De planner bewaart lokaal welke quests je daadwerkelijk als voltooid markeert en classificeert de relevante catalogus als:
-- **Nu beschikbaar** — level en bekende quest-prerequisites zijn voldaan;
-- **Bijna unlocked** — nog maximaal een prerequisite of een kleine levelstap;
-- **Geblokkeerd** — meerdere prerequisites en/of hoger level nodig;
-- **Voltooid** — expliciet door jou als account-complete gemarkeerd.
+Under **Account Progression**, you can set your PMC level and faction (USEC/BEAR). The planner stores locally which quests you explicitly mark as completed and classifies the relevant quest catalog as:
 
-De planner bouwt een dependency graph uit de actuele questcatalogus. Daardoor ziet hij niet alleen de directe prerequisite, maar ook de vervolgketen achter een quest. Per quest toont hij welke prerequisite nog mist, hoeveel directe unlocks voltooiing kan opleveren en hoe groot de bekende vervolglijn is.
+* **Available Now** — level and known quest prerequisites are met;
+* **Almost Unlocked** — no more than one prerequisite or a small level increase is still required;
+* **Blocked** — multiple prerequisites and/or a higher level are required;
+* **Completed** — explicitly marked by you as completed for your account.
 
-### Beste volgende raid
+The planner builds a dependency graph from the current quest catalog. This allows it to track not only a quest’s direct prerequisite, but also the follow-up chain behind that quest. For each quest, it shows which prerequisites are still missing, how many direct unlocks completing it may provide, and the size of its known follow-up chain.
 
-De planner groepeert alle momenteel beschikbare quests per ondersteunde map en geeft een **Beste volgende raid**. De score gebruikt onder andere:
-- hoeveel beschikbare quests op dezelfde map gecombineerd kunnen worden;
-- of de quests exacte kaartspots hebben;
-- aantal objectives;
-- directe unlock-impact;
-- bekende toekomstige questketen.
+### Best Next Raid
 
-Voor de gekozen set wordt automatisch een raid-kit samengesteld uit de gestructureerde quest requirements. Keys worden niet onnodig opgeteld; verbruikbare questitems/markers uit verschillende quests worden wel bij elkaar opgeteld. De kaart toont ook welke quests na deze set direct beschikbaar kunnen worden.
+The planner groups all currently available quests by supported map and provides a **Best Next Raid** recommendation. The score takes into account factors including:
 
-Met **Laad … raid plan** wordt de aanbevolen questset direct naar het bestaande Raid Plan gestuurd en daarna door Smart Route geoptimaliseerd. **Beste op huidige map** beperkt de aanbeveling tot de map die je nu bekijkt.
+* how many available quests can be combined on the same map;
+* whether the quests have exact map locations;
+* number of objectives;
+* direct unlock impact;
+* known future quest chains.
 
-### Account-complete koppeling
+For the selected set, a raid kit is automatically assembled from the structured quest requirements. Keys are not unnecessarily added together, while consumable quest items/markers required by different quests are combined into total quantities. The interface also shows which quests may become immediately available after completing the selected set.
 
-Een quest kan vanuit de progression-lijst of vanuit de actieve questkaart als voltooid worden gemarkeerd. Als de actieve quest account-complete wordt gezet, worden de lokale objective-vinkjes eveneens afgerond. De progression-status staat los van een live Tarkov-accountkoppeling: de gebruiker bepaalt zelf wanneer Tarkov de quest echt als voltooid heeft geregistreerd.
+Using **Load … Raid Plan** sends the recommended quest set directly to the existing Raid Plan and then optimizes it using Smart Route. **Best on Current Map** limits the recommendation to the map you are currently viewing.
 
-### Extraction image popup
+### Account Completion Integration
 
-De extraction-pin verbetering uit v24.4.1 blijft actief: klikken op een extraction opent een aparte grote vergelijk-popup met het herkenningsbeeld vooraan en de exacte RE3MR-kaartspot als extra slide.
+A quest can be marked as completed either from the progression list or from the active quest card. When the active quest is marked as account-complete, its local objective checkboxes are also marked as completed.
 
-## Media + Smart Navigation uit v24.4
+Progression status is independent of any live Tarkov account integration: the user decides when Tarkov has actually registered the quest as completed.
 
-### Media bij extraction- en questpins
+### Extraction Image Popup
 
-Iedere navigeerbare pin heeft in zijn detailvenster een **Exacte kaartspot**: een lokale uitsnede van de meegeleverde RE3MR-kaart met een crosshair exact op dezelfde pinprojectie als de kaart zelf. Daardoor heeft ook een pin waarvoor geen externe screenshot beschikbaar is altijd een bruikbare thumbnail.
+The extraction pin improvement introduced in v24.4.1 remains active: clicking an extraction opens a separate large comparison popup, with the recognition image shown first and the exact RE3MR map location included as an additional slide.
 
-Daarnaast bevat de ZIP lokale WebP-herkenningsbeelden voor:
-- alle 17 huidige Streets of Tarkov extractionnamen;
-- 20 herkenbare Streets quest-/objective-locaties;
-- 12 Ground Zero quest-/objective-locaties.
+## Media + Smart Navigation from v24.4
 
-Wanneer een herkenningsbeeld beschikbaar is, wordt het samen met de exacte kaartspot als carousel getoond. Klik op de preview voor een grote referentieweergave. Hover op een pin toont eveneens een compacte preview.
+### Media for Extraction and Quest Pins
 
-De afbeeldingen worden tijdens runtime **niet van internet geladen**. De gebundelde screenshots staan onder `web/assets/thumbs/`; de koppelingen, zoektermen en bronverwijzingen staan in `web/data/pin_media.json`.
+Every navigable pin includes an **Exact Map Location** in its detail window: a local crop of the included RE3MR map with a crosshair placed at exactly the same pin projection used on the map itself. This means that even a pin without an external screenshot always has a useful thumbnail.
 
-### Rijkere pin- en questinformatie
+The ZIP also includes local WebP recognition images for:
 
-Pin-details tonen waar beschikbaar:
-- extraction/POI-type, voorwaarden en opmerkingen uit de live/lokale data;
-- afstand vanaf de huidige XYZ;
-- herkenningsbeeld + exacte kaartspot;
-- location-confidence met score en bronsoort;
-- floor/indoor guidance en Y-hoogteverschil wanneer dat betrouwbaar uit de data kan worden afgeleid;
-- aliases/alternatieve namen;
-- bij questpins: trader, minimumlevel, objective-uitleg, requirements, quest-chain prerequisites, XP/belangrijke reward-items en Kappa/Lightkeeper-relevantie.
+* all 17 current Streets of Tarkov extraction names;
+* 20 recognizable Streets quest/objective locations;
+* 12 Ground Zero quest/objective locations.
 
-### Pin klopt niet?
+When a recognition image is available, it is displayed together with the exact map location in a carousel. Click the preview to open a large reference view. Hovering over a pin also displays a compact preview.
 
-Elke extraction- en questpin heeft **Pin klopt niet?**.
+The images are **not loaded from the internet** at runtime. The bundled screenshots are stored under `web/assets/thumbs/`; mappings, search terms, and source references are stored in `web/data/pin_media.json`.
 
-- `Alleen melden`: schrijft de feedback lokaal naar `pin_reports.json`.
-- `Nieuwe plek kiezen`: klik daarna exact op de juiste kaartpositie. De correctie wordt direct lokaal toegepast via `localStorage` en eveneens als review-record naar `pin_reports.json` geschreven.
-- `Eigen data -> Pin-correcties wissen` verwijdert alle lokale correcties.
+### Richer Pin and Quest Information
 
-Een handmatige kaartcorrectie beïnvloedt niet alleen de visuele pin; waar mogelijk wordt ook een gecorrigeerde wereldpositie uit de kaarttransformatie gebruikt voor navigatie/afstand.
+Where available, pin details show:
 
-### Alias search
+* extraction/POI type, conditions, and notes from live/local data;
+* distance from the current XYZ position;
+* recognition image + exact map location;
+* location confidence, including score and source type;
+* floor/indoor guidance and Y-axis height difference when this can be reliably derived from the data;
+* aliases/alternative names;
+* for quest pins: trader, minimum level, objective description, requirements, quest-chain prerequisites, XP/important reward items, and Kappa/Lightkeeper relevance.
 
-De globale zoekfunctie zoekt nu ook in:
-- extract- en community-aliases;
-- objective-tekst en questnaam;
-- pin notes/faction/category;
-- gekoppelde media-keywords.
+### Pin Incorrect?
 
-Voorbeeld: `vent shaft` vindt `Ventilation Shaft`.
+Every extraction and quest pin includes **Pin Incorrect?**.
 
-### Smart volgende doel
+* `Report Only`: writes the feedback locally to `pin_reports.json`.
+* `Choose New Location`: then click the exact correct position on the map. The correction is immediately applied locally through `localStorage` and is also written to `pin_reports.json` as a review record.
+* `Custom Data -> Clear Pin Corrections` removes all local corrections.
 
-Onder **Dichtbij** verschijnt een slim volgende open questdoel. De score gebruikt:
-- werkelijke rechtstreekse afstand vanaf de huidige XYZ;
-- een penalty voor een duidelijk andere verdieping;
-- een kleine penalty voor lagere positionele zekerheid.
+A manual map correction affects more than just the visual pin. Where possible, a corrected world position derived from the map transformation is also used for navigation and distance calculations.
+
+### Alias Search
+
+The global search function now also searches:
+
+* extraction and community aliases;
+* objective text and quest names;
+* pin notes/faction/category;
+* linked media keywords.
+
+Example: `vent shaft` finds `Ventilation Shaft`.
+
+### Smart Next Objective
+
+Under **Nearby**, a smart recommendation for the next open quest objective is displayed. The score uses:
+
+* actual straight-line distance from the current XYZ position;
+* a penalty for objectives that are clearly on a different floor;
+* a small penalty for lower positional confidence.
 
 ### Smart Route / Raid Plan
 
-`Optimaliseer route` is vervangen door **Smart Route**:
-- start bij je actuele positie wanneer beschikbaar;
-- bouwt eerst een nearest-neighbour volgorde;
-- verbetert de route vervolgens lokaal met een 2-opt stap;
-- toont segmentafstanden en een totale directe afstandsschatting;
-- kan optioneel eindigen bij de dichtstbijzijnde bekende extraction vanaf het laatste questdoel.
+`Optimize Route` has been replaced by **Smart Route**:
 
-Extractionvoorwaarden blijven belangrijk: het voorgestelde eindextract is een geografische aanbeveling, geen garantie dat die extract voor jouw PMC/Scav in die raid beschikbaar is.
+* starts from your current position when available;
+* first builds a nearest-neighbor ordering;
+* then locally improves the route using a 2-opt step;
+* displays segment distances and an estimated total straight-line distance;
+* can optionally finish at the nearest known extraction from the final quest objective.
 
-### Betere selectie/highlight
+Extraction conditions remain important: the suggested final extraction is a geographical recommendation, not a guarantee that the extraction will be available to your PMC/Scav in that raid.
 
-Een geselecteerde pin krijgt een duidelijke focus-ring/crosshair. Geselecteerde questgebieden gebruiken hun echte polygon/zone als sterkere highlight. DOM-pins blijven boven de kaartlaag staan en geselecteerde pins blijven visueel dominant.
+### Improved Selection/Highlighting
 
-## Nauwkeurigheid uit v24.2/v24.3 blijft behouden
+A selected pin receives a clearly visible focus ring/crosshair. Selected quest areas use their actual polygon/zone as a stronger highlight. DOM pins remain above the map layer, and selected pins remain visually dominant.
 
-- spelerpijl standaard 72 px, los van POI/quest-markermaat;
-- raw XYZ is leidend;
-- walkable snap standaard uit;
-- prediction maximaal 0,35 s;
-- kalibratie gebruikt verse raw XYZ en accepteert alleen punten terwijl je vrijwel stilstaat;
-- kalibratie-RMS en uitschietercontrole;
-- Streets extracts gebruiken RE3MR-specifieke display-anchors;
-- extraction/transitpins verdwijnen niet in automatische clusters;
-- bottom-center pin-anchor + exact anchorpunt;
-- live API extractdata heeft voorrang op de lokale fallback.
+## Accuracy Improvements from v24.2/v24.3 Remain in Place
 
-## Questdata
+* player arrow defaults to 72 px, independent of POI/quest marker size;
+* raw XYZ remains authoritative;
+* walkable snap is disabled by default;
+* prediction is limited to a maximum of 0.35 s;
+* calibration uses fresh raw XYZ and only accepts points while you are nearly stationary;
+* calibration RMS and outlier checks;
+* Streets extracts use RE3MR-specific display anchors;
+* extraction/transit pins are not hidden inside automatic clusters;
+* bottom-center pin anchor + exact anchor point;
+* live API extraction data takes priority over the local fallback.
 
-De bestaande questpipeline blijft intact:
-- canonical taskdata;
-- actuele objective-posities;
-- meerdere mogelijke locaties per objective;
-- overlay-patches op bestaande objectives;
-- map-side position corrections/hide/floor fixes;
-- storyline pins en echte area-polygons;
-- legacy positional data alleen als fallback voor nog lege objectives;
-- lokale cache na een succesvolle online refresh.
+## Quest Data
 
-Zie `QUEST_DATA.md` voor details.
+The existing quest pipeline remains intact:
 
-## Kaarten
+* canonical task data;
+* current objective positions;
+* multiple possible locations per objective;
+* overlay patches for existing objectives;
+* map-side position corrections/hide/floor fixes;
+* storyline pins and actual area polygons;
+* legacy positional data only as a fallback for objectives that still have no location data;
+* local caching after a successful online refresh.
 
-Alle meegeleverde RE3MR-kaartafbeeldingen blijven lokaal. Hoofdkaarten zijn Customs, Factory, Ground Zero, Icebreaker, Interchange, The Labyrinth, Lighthouse, Reserve, Shoreline, Streets of Tarkov, Terminal en Woods. Er zijn daarnaast detail/reference maps en de legacy The Lab-kaart.
+See `QUEST_DATA.md` for details.
 
-## Bronverwijzingen voor media
+## Maps
 
-De quest-/extractstructuur en image-guide beschikbaarheid zijn tijdens deze build gecontroleerd tegen de Official Escape from Tarkov Wiki. De gebundelde herkenningsscreenshots in v24.4 komen uit de actuele Wand / Team Wand Tarkov-mapchecklists. Bronpagina's staan per media-entry en als credits in `web/data/pin_media.json` en uitgebreider in `MEDIA_AND_SMART_NAV.md`.
+All included RE3MR map images remain local. The main maps are Customs, Factory, Ground Zero, Icebreaker, Interchange, The Labyrinth, Lighthouse, Reserve, Shoreline, Streets of Tarkov, Terminal, and Woods. Additional detail/reference maps and the legacy The Lab map are also included.
 
-## Meer technische documentatie
+## Media Source References
 
-- `LOCATION_ACCURACY.md` — raw XYZ, prediction en kalibratie.
-- `PIN_ALIGNMENT.md` — extraction visual anchors en pane stacking.
-- `QUEST_DATA.md` — quest merge/correction pipeline.
-- `MEDIA_AND_SMART_NAV.md` — thumbnail fallback, media manifest, confidence, pinfeedback en Smart Route.
-- `PROGRESSION_PLANNER.md` — accountstatus, dependency graph, unlock scoring en raid-kit aanbevelingen.
-- `QA_REPORT.md` — uitgevoerde regressie- en verpakkingstests.
+The quest/extraction structure and image-guide availability were checked against the Official Escape from Tarkov Wiki during this build. The bundled recognition screenshots introduced in v24.4 come from the current Wand / Team Wand Tarkov map checklists.
+
+Source pages are listed for each media entry and included as credits in `web/data/pin_media.json`, with more extensive documentation in `MEDIA_AND_SMART_NAV.md`.
+
+## Additional Technical Documentation
+
+* `LOCATION_ACCURACY.md` — raw XYZ, prediction, and calibration.
+* `PIN_ALIGNMENT.md` — extraction visual anchors and panel stacking.
+* `QUEST_DATA.md` — quest merge/correction pipeline.
+* `MEDIA_AND_SMART_NAV.md` — thumbnail fallback, media manifest, confidence, pin feedback, and Smart Route.
+* `PROGRESSION_PLANNER.md` — account status, dependency graph, unlock scoring, and raid kit recommendations.
+* `QA_REPORT.md` — completed regression and packaging tests.
